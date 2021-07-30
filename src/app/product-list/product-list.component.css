@@ -1,0 +1,51 @@
+.nike{
+    height: 600px;
+}
+.featured{
+    margin-left: 430px;
+    color: black;
+}
+hr.new2 {
+    border-top: 2px solid rgb(17, 5, 196);
+    border-radius: 5px;
+    width: 30%;
+    margin-left: 470px;
+  }
+
+  hr.new3{
+    border-top: 2px solid rgb(17, 5, 196);
+    border-radius: 5px;
+    width: 55%;
+    margin-left: 300px;
+  }
+.details{
+    color: black;
+    margin-top: -19px;
+}
+.quest{
+    margin-left: 500px;
+    color: black;
+}
+.detail{
+    margin-left: 100px;
+    width: 70%;
+}
+.brand{
+    margin-left: 590px;
+    color: black;
+    margin-top: 60px;
+}
+.line{
+    margin-top: 50px;
+}
+
+.btn{
+    height: 10px;
+    width: 5%;
+    font-size: 5px;
+}
+.vl {
+    border-left: 2px solid rgb(181, 181, 191);
+    height: 137px;
+  }
+
