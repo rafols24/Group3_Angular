@@ -42,7 +42,7 @@
 <div class="container">
   <div class="row">
     <div class="col" *ngFor="let product of products">
-      <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 16rem;" [title]="'Click to see the ' + product.name + ' details'">
+      <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 16rem;" [title]="'Click to see the ' + product.name + ' details'" routerLink="/product-details">
         <img src="../../assets/imgs/sample2.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h6>Name: {{product.name}}</h6>

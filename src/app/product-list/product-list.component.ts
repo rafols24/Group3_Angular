@@ -22,43 +22,51 @@ export class ProductListComponent implements OnInit {
   products =[
   {
     name: "Nike",
-    price: 250
+    price: 250,
+    description: "This is the nike shoes"
 
 
   },
   {
     name: "Nike",
-    price: 250
+    price: 250,
+    description: "This is the nike shoes"
 
   },
   {
     name: "Nike",
-    price: 250
+    price: 250,
+    description: "This is the nike shoes"
 
   },
   {
     name: "Nike",
-    price: 250
+    price: 250,
+    description: "This is the nike shoes"
 
   },
    {
     name: "Nike",
-    price: 250
+    price: 250,
+    description: "This is the nike shoes"
 
   },
   {
     name: "Nike",
-    price: 250
+    price: 250,
+    description: "This is the nike shoes"
 
   },
   {
     name: "Nike",
-    price: 250
+    price: 250,
+    description: "This is the nike shoes"
 
   },
   {
     name: "Nike",
-    price: 250
+    price: 250,
+    description: "This is the nike shoes"
 
   }
 
