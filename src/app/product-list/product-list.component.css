@@ -6,14 +6,14 @@
     color: black;
 }
 hr.new2 {
-    border-top: 2px solid rgb(17, 5, 196);
+    border-top: 2px solid black;
     border-radius: 5px;
     width: 30%;
     margin-left: 470px;
   }
 
   hr.new3{
-    border-top: 2px solid rgb(17, 5, 196);
+    border-top: 2px solid black;
     border-radius: 5px;
     width: 55%;
     margin-left: 300px;
