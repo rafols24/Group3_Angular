@@ -1,3 +1,7 @@
+<div style="margin-top: -30px;">
+  <app-top-bar></app-top-bar>
+</div>
+
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -38,11 +42,11 @@
 <div class="container">
   <div class="row">
     <div class="col" *ngFor="let product of products">
-      <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 16rem;">
+      <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 16rem;" [title]="'Click to see the ' + product.name + ' details'">
         <img src="../../assets/imgs/sample2.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h6>Name: {{product.name}}</h6>
-          <h6>Price: {{product.price}}</h6>
+          <h6>Price: {{product.price}}.00</h6>
         </div>
       </div>
     </div>
@@ -69,7 +73,7 @@
 
     <div class="vl" style="margin-left: 18px;">
       <div style="margin-left: 15px;margin-top: 35px;">
-        <a class="button rounded-pill">Shop All</a>
+        <button class="rounded-pill" routerLink="/all-products">Shop All</button>
       </div>
     </div>
   </div>
@@ -96,3 +100,8 @@
     </div>
   </div>
 </div>
+
+<div class="footer">
+  <app-footer></app-footer>
+</div>
+

@@ -1,4 +1,4 @@
-<a [routerLink]="['/']">
+<a [routerLink]="['/home']">
   <h1>Nike Store Logo</h1>
 </a>
 
@@ -6,9 +6,9 @@
 
 <div>
   <input class="search" type="text" placeholder="Search..">
-  <a class="button">Shop All</a>
-  <a class="button">Cart</a>
+  <button class="menu" routerLink="/all-products">Shop All</button>
+  <button  class="menu" routerLink="/cart">Cart</button>
   <a style="color: white;">|</a>
-  <a class="button">Login</a>
-  <a class="button">Register</a>
+  <button class="menu" routerLink="/login">Login</button>
+  <button class="menu" routerLink="/register">Register</button>
 </div>

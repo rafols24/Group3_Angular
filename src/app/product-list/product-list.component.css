@@ -49,3 +49,9 @@ hr.new2 {
     height: 137px;
   }
 
+  .footer{
+    clear: both;
+    position: relative;
+    height: 100px;
+    
+}

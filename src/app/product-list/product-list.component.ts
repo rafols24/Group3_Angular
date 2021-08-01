@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+// import { TopBarComponent } from '../top-bar/top-bar.component';
+// import { FooterComponent } from '../footer/footer.component';
+
+import { Product } from '../product';
 
 @Component({
   selector: 'app-product-list',
@@ -7,7 +12,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductListComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
@@ -16,6 +23,7 @@ export class ProductListComponent implements OnInit {
   {
     name: "Nike",
     price: 250
+
 
   },
   {
@@ -55,6 +63,8 @@ export class ProductListComponent implements OnInit {
   }
 
 ]
+
+
 
 
 
