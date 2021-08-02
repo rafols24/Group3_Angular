@@ -10,32 +10,65 @@
         <a class="menu" routerLink="/login">I am already a member</a>
       </div>
       <div class="signup-form">
-        <h2 class="form-title">Sign up</h2>
-        <form method="POST" class="register-form" id="register-form">
+        <h2 class="form-title">Register</h2>
+        <form (ngSubmit)="user.valid && onSubmit()" [formGroup]="user" class="register-form" id="register-form">
           <div class="form-group">
-            <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-            <input type="text" name="name" id="name" placeholder="FirstName" />
+            <input type="text" class="form-control" formControlName="firstname" [ngClass]="{'is-invalid' : user.get('firstname').touched && user.get('firstname').invalid}"
+              placeholder="First Name">
+            <div *ngIf="user.get('firstname').touched && user.get('firstname').invalid" class="invalid-feedback">
+              <p class="validate" *ngIf="user.get('firstname').errors.required">*First Name is required</p>
+              <p class="validate"  *ngIf="user.get('firstname').errors.minlength">*First Name must atleast 2 characters</p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" formControlName="lastname" [ngClass]="{'is-invalid' : user.get('lastname').touched && user.get('lastname').invalid}"
+              placeholder="Last Name">
+            <div *ngIf="user.get('lastname').touched && user.get('lastname').invalid" class="invalid-feedback">
+              <p class="validate" *ngIf="user.get('lastname').errors.required">Last Name is required</p>
+              <p class="validate" *ngIf="user.get('lastname').errors.minlength">Last Name must be atleast 2 characters</p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" formControlName="username" [ngClass]="{'is-invalid' : user.get('username').touched && user.get('username').invalid}"
+              placeholder="Username">
+            <div *ngIf="user.get('username').touched && user.get('username').invalid" class="invalid-feedback">
+              <p  class="validate" *ngIf="user.get('username').errors.required">Username is required</p>
+              <p  class="validate" *ngIf="user.get('username').errors.minlength">Username must be atleat 5 characters</p>
+            </div>
           </div>
           <div class="form-group">
-            <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-            <input type="text" name="name" id="name" placeholder="LastName" />
+            <input type="password" class="form-control" formControlName="password" [ngClass]="{'is-invalid' : user.get('password').touched && user.get('password').invalid}"
+              placeholder="Password">
+            <div *ngIf="user.get('password').touched && user.get('password').invalid" class="invalid-feedback">
+              <div class="validate"  *ngIf="user.get('password').errors.required"> Password is required</div>
+              <div class="validate"  *ngIf="user.get('password').errors.minlength"> Password must be atleat 8 characters</div>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="email"><i class="zmdi zmdi-email"></i></label>
-            <input type="email" name="email" id="email" placeholder="UserName" />
+          <div class="form-group ">
+            <input type="password" class="form-control" formControlName="confirmpassword" [ngClass]="{'is-invalid' : user.get('confirmpassword').touched && user.get('confirmpassword').invalid  && user.get('confirmpassword').errors}"
+              placeholder="Confirm Password">
+            <div *ngIf="user.get('confirmpassword').touched && user.get('confirmpassword').invalid && user.get('confirmpassword').errors"
+              class="invalid-feedback">
+              <div class="validate" *ngIf="user.get('confirmpassword').errors.required"> Password is required</div>
+              <div class="validate" *ngIf="user.get('confirmpassword').errors.mustMatch"> Password doesn't match</div>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-            <input type="password" name="pass" id="pass" placeholder="Password" />
-          </div>
-          <div class="form-group form-button">
-            <input type="submit" name="signup" id="signup" class="form-submit" value="Register" />
+          <!-- <div class="form-group form-button">
+            <input type="submit" name="signup" id="signup" class="form-submit" [disabled]="!user.valid" value="Register" />
+          </div> -->
+          <div class="col text-center">
+            <button type="submit" class="btn btn-primary" [disabled]="!user.valid">
+              Register</button>
           </div>
         </form>
       </div>
     </div>
   </div>
+</div>
 <!-- </section> -->
+
 <div class="footer">
   <app-footer></app-footer>
 </div>
