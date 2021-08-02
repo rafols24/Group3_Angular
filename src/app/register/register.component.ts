@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {  FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 
 @Component({
@@ -74,11 +75,18 @@ mydata: any;
     console.warn(this.user.value);
     this.http.post(this.url, this.user.value).subscribe(data=> {
     this.mydata = data;
+
+    Swal.fire({
+      text: 'You Register Successfully!',
+      icon: 'success'
+    });
+
     console.log(data);
     this.router.navigate(['/login'])
     }
     , errors=>{
-      alert("Username is already existing!");
+      // alert("Username is already existing!");
+      Swal.fire('Oops...', 'Something went wrong!', 'error')
       console.log(errors.error.errors);
     });
   }
