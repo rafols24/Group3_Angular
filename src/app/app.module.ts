@@ -13,6 +13,9 @@ import { AllProductsComponent } from './all-products/all-products.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+
+// import { HeaderComponent } from './header/header.component';
+
 import { HomepageComponent } from './user/homepage/homepage.component';
 import { SideBarComponent } from './user/side-bar/side-bar.component';
 import { UserTopBarComponent } from './user/user-top-bar/user-top-bar.component';
@@ -27,6 +30,7 @@ import { ProductsComponent } from './products/products.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +42,9 @@ import { ProductsComponent } from './products/products.component';
     LoginComponent,
     RegisterComponent,
     ProductDetailsComponent,
+
+//     HeaderComponent
+
     HomepageComponent,
      SideBarComponent,
     UserTopBarComponent,
@@ -49,6 +56,7 @@ import { ProductsComponent } from './products/products.component';
      AdminFooterComponent,
      AddProductComponent,
      ProductsComponent
+
 
   ],
   imports: [

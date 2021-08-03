@@ -1,13 +1,56 @@
-<button routerLink="/home">
+
+<section>
+    <nav class="navbar  stroke fixed-top navbar-expand-lg navbar-dark  " style="background-color:black;opacity: 0.95;">
+        <div class="container-fluid">
+            <a class="navbar-brand js-scroll-trigger" href="#" [routerLink]="['/home']"><img src="assets/img/logo.png" alt="..." style="height:30px; width: 90px;" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse " id="navbarScroll">
+                <ul class="navbar-nav ms-auto  my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px; ">
+
+<!-- <button routerLink="/home">
   <h1>Nike Store Logo</h1>
-</button>
+</button> -->
 
 
-<div>
+                    <li class="nav-item ">
+                        <a class="nav-link js-scroll-trigger " routerLink="/all-products ">Products</a>
+                    </li>
+
+
+                    <li class="nav-item ">
+                        <a class="nav-link " routerLink="/cart ">
+                        Cart
+                    </a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link js-scroll-trigger " routerLink="/login ">Login</a>
+                    </li>
+                    <li> <a class="nav-link js-scroll-trigger " style="color: white; ">|</a></li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link js-scroll-trigger " routerLink="/register ">Register</a>
+                    </li>
+
+                </ul>
+                <!-- <form class="d-flex ">
+                <input class="form-control me-2 " type="search " placeholder="Search " aria-label="Search ">
+                <button class="btn btn-outline-success " type="submit ">Search</button>
+            </form> -->
+            </div>
+        </div>
+
+    </nav>
+</section>
+
+<!-- <div> -->
   <!-- <input class="search" type="text" placeholder="Search.."> -->
-  <button class="menu" routerLink="/all-products">Shop All</button>
+<!--   <button class="menu" routerLink="/all-products">Shop All</button>
   <button  class="menu" routerLink="/cart">Cart</button>
   <a style="color: white;">|</a>
   <button class="menu" routerLink="/login">Login</button>
   <button class="menu" routerLink="/register">Register</button>
-</div>
+</div> -->
+
