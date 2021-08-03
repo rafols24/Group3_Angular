@@ -2,7 +2,7 @@
     <app-top-bar></app-top-bar>
 </div>
 
-<div *ngIf ="!isShown">
+<div>
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -79,7 +79,7 @@
     <h4 class="featured">FEATURED PRODUCTS</h4>
 </div>
 <br>
-
+<div class="container">
     <div class="row">
         <div class="col" *ngFor="let products of product">
             <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 16rem;" [title]="'Click to see the ' + products.name + ' details'" routerLink="/product-details">

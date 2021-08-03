@@ -12,6 +12,7 @@ import { AddProductComponent } from './../app/admin-side/add-product/add-product
 import { CustomersComponent } from './admin-side/customers/customers.component';
 import { OrderComponent } from './admin-side/order/order.component';
 
+
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
   { path: 'home', component: ProductListComponent, pathMatch: 'full'},
@@ -25,7 +26,8 @@ const routes: Routes = [
   { path: 'addproduct', component: AddProductComponent, pathMatch: 'full'},
   { path: 'customers', component: CustomersComponent, pathMatch: 'full'},
   { path: 'order', component: OrderComponent, pathMatch: 'full'},
-  { path: 'order', component: OrderComponent, pathMatch: 'full'},
+  { path: 'cart', component: CartComponent, pathMatch: 'full'},
+  
  
 ];
 
