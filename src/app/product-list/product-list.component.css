@@ -1,57 +1,110 @@
-.nike{
-    height: 600px;
+h5 {
+    color: teal;
+    font-weight: bolder;
 }
-.featured{
+
+h5,
+h6 {
+    text-align: center;
+}
+
+.cartBtn {
+    margin: 0 auto;
+    display: block;
+}
+
+h6 {
+    font-weight: bold;
+}
+
+.nike {
+    height: 650px;
+}
+
+.featured {
     margin-left: 430px;
     color: black;
 }
+
 hr.new2 {
     border-top: 2px solid black;
     border-radius: 5px;
     width: 30%;
     margin-left: 470px;
-  }
+}
 
-  hr.new3{
+hr.new3 {
     border-top: 2px solid black;
     border-radius: 5px;
     width: 55%;
     margin-left: 300px;
-  }
-.details{
+}
+
+.details {
     color: black;
     margin-top: -19px;
 }
-.quest{
+
+.quest {
     margin-left: 500px;
     color: black;
 }
-.detail{
+
+.detail {
     margin-left: 100px;
     width: 70%;
 }
-.brand{
+
+.brand {
     margin-left: 590px;
     color: black;
     margin-top: 60px;
 }
-.line{
+
+.line {
     margin-top: 50px;
 }
 
-.btn{
+.btn {
     height: 10px;
     width: 5%;
     font-size: 5px;
 }
+
 .vl {
     border-left: 2px solid rgb(181, 181, 191);
     height: 137px;
-  }
+}
 
-  .footer{
+.footer {
     clear: both;
     position: relative;
     height: 100px;
-    
+}
+
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.page-section {
+    padding: 6rem 0;
+}
+
+.page-section h2.section-heading {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.page-section h3.section-subheading {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-bottom: 4rem;
+}
+
+.text-center {
+    text-align: center !important;
 }
