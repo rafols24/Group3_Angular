@@ -22,6 +22,7 @@ import { CustomersComponent } from './admin-side/customers/customers.component';
 import { AdminTopbarComponent } from './admin-side/admin-topbar/admin-topbar.component';
 import { AdminSidebarComponent } from './admin-side/admin-sidebar/admin-sidebar.component';
 import { AdminFooterComponent } from './admin-side/admin-footer/admin-footer.component';
+import { AddProductComponent } from './admin-side/add-product/add-product.component';
 
 
 
@@ -44,7 +45,8 @@ import { AdminFooterComponent } from './admin-side/admin-footer/admin-footer.com
      CustomersComponent,
      AdminTopbarComponent,
      AdminSidebarComponent,
-     AdminFooterComponent
+     AdminFooterComponent,
+     AddProductComponent
 
   ],
   imports: [
