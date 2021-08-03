@@ -9,6 +9,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { HomepageComponent } from './../../src/app/user/homepage/homepage.component';
 import { AdminComponent } from './../app/admin-side/admin/admin.component';
 import { AddProductComponent } from './../app/admin-side/add-product/add-product.component'
+import { CustomersComponent } from './admin-side/customers/customers.component';
+import { OrderComponent } from './admin-side/order/order.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -21,6 +23,10 @@ const routes: Routes = [
   { path: 'admin', component: AdminComponent, pathMatch: 'full'},
   { path: 'userhomepage', component: HomepageComponent, pathMatch: 'full'},
   { path: 'addproduct', component: AddProductComponent, pathMatch: 'full'},
+  { path: 'customers', component: CustomersComponent, pathMatch: 'full'},
+  { path: 'order', component: OrderComponent, pathMatch: 'full'},
+  { path: 'order', component: OrderComponent, pathMatch: 'full'},
+ 
 ];
 
 @NgModule({
