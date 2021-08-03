@@ -28,6 +28,7 @@ import { AdminFooterComponent } from './admin-side/admin-footer/admin-footer.com
 import { AddProductComponent } from './admin-side/add-product/add-product.component';
 import { ProductsComponent } from './products/products.component';
 import { UserCartComponent } from './user/user-cart/user-cart.component';
+import { UserOrderComponent } from './user/user-order/user-order.component';
 
 
 
@@ -57,7 +58,8 @@ import { UserCartComponent } from './user/user-cart/user-cart.component';
      AdminFooterComponent,
      AddProductComponent,
      ProductsComponent,
-     UserCartComponent
+     UserCartComponent,
+     UserOrderComponent
 
 
   ],

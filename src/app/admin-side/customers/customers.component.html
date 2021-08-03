@@ -1,13 +1,4 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
     <div style="margin-top: -25px;">
         <app-admin-topbar></app-admin-topbar>
        </div>
@@ -17,7 +8,7 @@
         </div>
 
 <!-- table -->
-<div class="wrapper">
+<div class="wrapper" style="margin-left: 20px;">
 
     <h4>OUR VALUED CUSTOMERS</h4>
     <br>
@@ -31,12 +22,12 @@
             <th scope="col">Action</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody *ngFor="let customer of customers">
           <tr>
             <th scope="row">1</th>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>{{customer.firstname}}</td>
+            <td>{{customer.lastname}}</td>
+            <td>{{customer.username}}</td>
             <td>
             <button type="button" class="btn btn-outline-primary" onclick="location.href='#'">Delete</button>
             </td>
@@ -44,5 +35,3 @@
         </tbody>
       </table>
     </div>
-</body>
-</html>

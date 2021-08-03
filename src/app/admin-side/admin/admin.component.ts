@@ -9,63 +9,6 @@ export class AdminComponent implements OnInit {
 
   constructor() { }
 
-  products =[
-    {
-      name: "Nike",
-      price: 250,
-      description: "This is the nike shoes"
-  
-  
-    },
-    {
-      name: "Nike",
-      price: 250,
-      description: "This is the nike shoes"
-  
-    },
-    {
-      name: "Nike",
-      price: 250,
-      description: "This is the nike shoes"
-  
-    },
-    {
-      name: "Nike",
-      price: 250,
-      description: "This is the nike shoes"
-  
-    },
-     {
-      name: "Nike",
-      price: 250,
-      description: "This is the nike shoes"
-  
-    },
-    {
-      name: "Nike",
-      price: 250,
-      description: "This is the nike shoes"
-  
-    },
-    {
-      name: "Nike",
-      price: 250,
-      description: "This is the nike shoes"
-  
-    },
-    {
-      name: "Nike",
-      price: 250,
-      description: "This is the nike shoes"
-  
-    },  {
-      name: "Nike",
-      price: 250,
-      description: "This is the nike shoes"
-  
-    }
-  
-  ]
 
   ngOnInit(): void {
   }

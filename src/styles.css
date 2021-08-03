@@ -48,7 +48,7 @@ p {
 /* Hyperlink */
 
 a {
-    cursor: pointer;
+    /* cursor: pointer; */
     color: #2069b3;
     text-decoration: none;
 }
@@ -86,7 +86,7 @@ button {
     padding: 8px 16px;
     border-radius: 2px;
     font-size: 14px;
-    cursor: pointer;
+    /* cursor: pointer; */
     background-color: #3a3b3c;
     color: white;
     border: none;
@@ -109,7 +109,7 @@ button:hover {
 .button:disabled,
 button:disabled {
     opacity: 0.5;
-    cursor: auto;
+    /* cursor: auto; */
 }
 
 
