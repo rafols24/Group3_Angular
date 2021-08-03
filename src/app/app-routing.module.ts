@@ -7,7 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { HomepageComponent } from './../../src/app/user/homepage/homepage.component';
-import { AdminComponent } from './../../src/app/admin/admin/admin.component';
+import { AdminComponent } from './../app/admin-side/admin/admin.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},

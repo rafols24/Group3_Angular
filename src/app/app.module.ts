@@ -16,7 +16,13 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { HomepageComponent } from './user/homepage/homepage.component';
 import { SideBarComponent } from './user/side-bar/side-bar.component';
 import { UserTopBarComponent } from './user/user-top-bar/user-top-bar.component';
-import { AdminComponent } from './admin/admin/admin.component';
+import { AdminComponent } from './../app/admin-side/admin/admin.component';
+import { OrderComponent } from './admin-side/order/order.component';
+import { CustomersComponent } from './admin-side/customers/customers.component';
+import { AdminTopbarComponent } from './admin-side/admin-topbar/admin-topbar.component';
+import { AdminSidebarComponent } from './admin-side/admin-sidebar/admin-sidebar.component';
+import { AdminFooterComponent } from './admin-side/admin-footer/admin-footer.component';
+
 
 
 @NgModule({
@@ -33,7 +39,12 @@ import { AdminComponent } from './admin/admin/admin.component';
     HomepageComponent,
      SideBarComponent,
     UserTopBarComponent,
-     AdminComponent
+     AdminComponent,
+     OrderComponent,
+     CustomersComponent,
+     AdminTopbarComponent,
+     AdminSidebarComponent,
+     AdminFooterComponent
 
   ],
   imports: [
