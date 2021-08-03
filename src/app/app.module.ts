@@ -16,6 +16,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { HomepageComponent } from './user/homepage/homepage.component';
 import { SideBarComponent } from './user/side-bar/side-bar.component';
 import { UserTopBarComponent } from './user/user-top-bar/user-top-bar.component';
+import { AdminComponent } from './admin/admin/admin.component';
+
 
 @NgModule({
   declarations: [
@@ -29,8 +31,10 @@ import { UserTopBarComponent } from './user/user-top-bar/user-top-bar.component'
     RegisterComponent,
     ProductDetailsComponent,
     HomepageComponent,
-    SideBarComponent,
-    UserTopBarComponent
+     SideBarComponent,
+    UserTopBarComponent,
+     AdminComponent
+
   ],
   imports: [
     BrowserModule,

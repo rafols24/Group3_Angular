@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="sidebar">
+      <!-- <div class="containerA">
+                <div class="dropdown">
+                    <div class="profile">ADMIN &nbsp; <img class="dropbtn" src="../../assets/imgs/sample2.png">
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><i class='bx bx-cog'></i><span>Add Products</span></li>
+                                <br>
+                                <li><i class='bx bx-user'></i><span>Customers</span></li>
+                                <br>
+                                <li><i class='bx bx-cog'></i><span>Products</span></li>
+                                <br>
+                                <li><i class='bx bx-cog'></i><span>Help</span></li>
+                                <br>
+                                <li><i class='bx bx-log-in-circle'></i><span>Logout</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+      <br><br><br>
+<!-- ADD PRODUCTS FORM -->
+      <form class="form-inline" style="display:flex; position: relative;margin: 5px;">
+        &nbsp;&nbsp;<i class='bx bx-plus'></i>&nbsp;<h5>ADD PRODUCT</h5><br><br>
+        <div class="form-group mx-sm-1 mb-2" style="justify-content: center;">
+          <label for="inputPassword2" class="sr-only">Product Name</label>
+          <input type="password" class="form-control" id="inputPassword2" placeholder="Product Name">
+        </div>
+        <div class="form-group mx-sm-1 mb-2" style="justify-content: center;">
+          <label for="inputPassword2" class="sr-only">Price</label>
+          <input type="password" class="form-control" id="inputPassword2" placeholder="Price">
+        </div>
+        <div class="form-group mx-sm-1 mb-2" style="justify-content: center;">
+          <label for="inputPassword2" class="sr-only">Description</label>
+          <input type="password" class="form-control" id="inputPassword2" placeholder="Description">
+        </div>
+      </form>
+<!-- end -->
+    </div>
+    <div class="main_content">
+      <div class="header">
+        <div class="info">
+          <h4 class="featured" style="text-align: center;">FEATURED PRODUCTS</h4>
+          <br>
+          <hr>
+          <br>
+          <div class="row">
+            <div class="col" *ngFor="let product of products">
+              <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 16rem;"
+                [title]="'Click to see the ' + product.name + ' details'" routerLink="/product-details">
+                <img src="../../assets/imgs/sample2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6>Name: {{product.name}}</h6>
+                  <h6>Price: {{product.price}}.00</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <app-footer></app-footer>
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>
