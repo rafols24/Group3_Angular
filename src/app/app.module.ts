@@ -13,6 +13,9 @@ import { AllProductsComponent } from './all-products/all-products.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+
+// import { HeaderComponent } from './header/header.component';
+
 import { HomepageComponent } from './user/homepage/homepage.component';
 import { SideBarComponent } from './user/side-bar/side-bar.component';
 import { UserTopBarComponent } from './user/user-top-bar/user-top-bar.component';
@@ -23,6 +26,8 @@ import { AdminTopbarComponent } from './admin-side/admin-topbar/admin-topbar.com
 import { AdminSidebarComponent } from './admin-side/admin-sidebar/admin-sidebar.component';
 import { AdminFooterComponent } from './admin-side/admin-footer/admin-footer.component';
 import { AddProductComponent } from './admin-side/add-product/add-product.component';
+import { ProductsComponent } from './products/products.component';
+
 
 
 
@@ -37,6 +42,9 @@ import { AddProductComponent } from './admin-side/add-product/add-product.compon
     LoginComponent,
     RegisterComponent,
     ProductDetailsComponent,
+
+//     HeaderComponent
+
     HomepageComponent,
      SideBarComponent,
     UserTopBarComponent,
@@ -46,7 +54,9 @@ import { AddProductComponent } from './admin-side/add-product/add-product.compon
      AdminTopbarComponent,
      AdminSidebarComponent,
      AdminFooterComponent,
-     AddProductComponent
+     AddProductComponent,
+     ProductsComponent
+
 
   ],
   imports: [
