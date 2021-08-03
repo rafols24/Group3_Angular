@@ -42,6 +42,7 @@ onSubmit(){
   }
 
   console.warn(this.product.value);
+  this.router.navigate(['/addproduct']);
 
   this.http.post(this.url, this.product.value).subscribe(productData =>{
   this.dataOfProduct = productData;
@@ -53,7 +54,7 @@ onSubmit(){
   });
 
   console.log(productData);
-  this.router.navigate(['/addproduct']);
+  // this.router.navigate(['/addproduct']);
   },
    errors =>{
     Swal.fire('Oops...', 'Something went wrong!', 'error')

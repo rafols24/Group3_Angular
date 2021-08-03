@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-// import { TopBarComponent } from '../top-bar/top-bar.component';
-// import { FooterComponent } from '../footer/footer.component';
+import { HttpClient } from '@angular/common/http';
 
-import { Product } from '../product';
 
 @Component({
   selector: 'app-product-list',
@@ -12,68 +10,34 @@ import { Product } from '../product';
 })
 export class ProductListComponent implements OnInit {
 
+
+  product: any;
+  isShown = false;
+  productUrl = "http://127.0.0.1:8000/api/product/getAllProducts"; 
+  show:boolean;
+
   constructor(
-    private router: Router
+    private router: Router,
+    private http: HttpClient
   ) { }
 
   ngOnInit(): void {
+    this.http.get(this.productUrl).subscribe((data:any) => {
+        this.product = data.message;  
+        data.show = false;
+        return data;
+        console.log(this.product);
+     });
   }
 
-  products =[
-  {
-    name: "Kyrie Low",
-    price: 5500,
-    description: "This is the nike shoes"
+  showDetail(product) {
+    this.isShown = true;
+    this.product = product;
+    }
 
-
-  },
-  {
-    name: "Lebron Soldier",
-    price: 6500,
-    description: "This is the nike shoes"
-
-  },
-  {
-    name: "Lebron Witness IV ",
-    price: 5000,
-    description: "This is the nike shoes"
-
-  },
-  {
-    name: "Lebron Witness V-White",
-    price: 6000,
-    description: "This is the nike shoes"
-
-  },
-   {
-    name: "Lebron VII Grey",
-    price: 10000,
-    description: "This is the nike shoes"
-
-  },
-  {
-    name: "Lebron VII PS",
-    price: 7250,
-    description: "This is the nike shoes"
-
-  },
-  {
-    name: "Ultraboost",
-    price: 6000,
-    description: "This is the nike shoes"
-
-  },
-  {
-    name: "Nike Shirt",
-    price: 500,
-    description: "This is the nike shoes"
-
+  hideDetail(){
+    this.isShown = false;
   }
-
-]
-
-
-
 
 
 }

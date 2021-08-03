@@ -2,14 +2,21 @@
     <app-top-bar></app-top-bar>
   </div>
 
-
-
-
-
-
-
-  
-
+  <div class="container" (click)="showDetail(product)" style="margin-top: 100px;">
+    <div class="row">
+      <div class="col" *ngFor="let products of product">
+        <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 16rem;" [title]="'Click to see the ' + products.product_name + ' details'">
+          <div>
+            <img src="{{products.product_image[0].image}}" alt="">
+          </div>
+          <div class="card-body">
+            <h6>Name: {{products.product_name}}</h6>
+            <h6>Price: {{products.price}}.00</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <div class="footer">
     <app-footer></app-footer>

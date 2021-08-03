@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from '../product';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-product-details',
@@ -8,9 +8,14 @@ import { Product } from '../product';
 })
 export class ProductDetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private http: HttpClient
+  ) { }
 
   ngOnInit(): void {
   }
+
+  productUrl = "http://127.0.0.1:8000/api/product/getAllProducts";
+  
 
 }
