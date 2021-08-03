@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-// import { TopBarComponent } from '../top-bar/top-bar.component';
-// import { FooterComponent } from '../footer/footer.component';
+import { HttpClient } from '@angular/common/http';
 
-import { Product } from '../product';
 
 @Component({
   selector: 'app-product-list',
@@ -12,68 +10,34 @@ import { Product } from '../product';
 })
 export class ProductListComponent implements OnInit {
 
+
+  product: any;
+  isShown = false;
+  productUrl = "http://127.0.0.1:8000/api/product/getAllProducts"; 
+  show:boolean;
+
   constructor(
-    private router: Router
+    private router: Router,
+    private http: HttpClient
   ) { }
 
   ngOnInit(): void {
+    this.http.get(this.productUrl).subscribe((data:any) => {
+        this.product = data.message;  
+        data.show = false;
+        return data;
+        console.log(this.product);
+     });
   }
 
-  products =[
-  {
-    name: "Nike",
-    price: 250,
-    description: "This is the nike shoes"
+  showDetail(product) {
+    this.isShown = true;
+    this.product = product;
+    }
 
-
-  },
-  {
-    name: "Nike",
-    price: 250,
-    description: "This is the nike shoes"
-
-  },
-  {
-    name: "Nike",
-    price: 250,
-    description: "This is the nike shoes"
-
-  },
-  {
-    name: "Nike",
-    price: 250,
-    description: "This is the nike shoes"
-
-  },
-   {
-    name: "Nike",
-    price: 250,
-    description: "This is the nike shoes"
-
-  },
-  {
-    name: "Nike",
-    price: 250,
-    description: "This is the nike shoes"
-
-  },
-  {
-    name: "Nike",
-    price: 250,
-    description: "This is the nike shoes"
-
-  },
-  {
-    name: "Nike",
-    price: 250,
-    description: "This is the nike shoes"
-
+  hideDetail(){
+    this.isShown = false;
   }
-
-]
-
-
-
 
 
 }

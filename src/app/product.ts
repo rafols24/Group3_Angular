@@ -1,7 +1,9 @@
 export interface Product {
+    show:boolean;
     id: number;
-    name: string;
+    product_name: string;
     price: number;
     description: string;
+    product_image: string;
 }
 
