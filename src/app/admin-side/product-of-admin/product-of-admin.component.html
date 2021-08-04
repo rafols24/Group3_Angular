@@ -1,9 +1,13 @@
-<app-side-bar></app-side-bar>
 
 <div style="margin-top: -25px;">
-    <app-user-top-bar></app-user-top-bar>
-</div>
-
+    <app-admin-topbar></app-admin-topbar>
+   </div>
+   
+   <div>
+   <app-admin-sidebar></app-admin-sidebar>
+   </div>
+   
+   
 <div class="container" style="margin-left: 170px; margin-top: 50px;" *ngIf="!isShown">
     <div class="row">
         <div class="col" *ngFor="let products of product">
@@ -14,7 +18,6 @@
                     <h6>Php {{products.price}}.00</h6>
                     <button class="primary cartBtn" (click)="showDetail(product)"
                         [title]="'Click to see the ' + products.name + ' details'">View Details</button>
-                    <button class="primary cartBtn" routerLink="/user-cart"> Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -36,11 +39,12 @@
             <h3><b>{{products.product_name}}</b></h3>
             <hr class="new2">
             <h5>{{products.description}}</h5>
-            <button class="primary cartBtn" routerLink="/user-cart"> Add to Cart</button><br>
             <button class="btn btn-outline-primary" (click)="hideDetail()">Back</button>
         </div>
     </div>
 </div>
-<div class="footer">
-    <app-footer></app-footer>
-</div>
+   
+   
+     <div class="footer">
+       <app-admin-footer></app-admin-footer>
+     </div>

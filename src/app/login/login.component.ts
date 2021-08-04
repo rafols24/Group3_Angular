@@ -50,6 +50,7 @@ onSubmit(): void {
     if (this.kindOfUser.logincredential.usertype === 'admin') {
       this.router.navigate(['/admin']);
     }
+    
 
     window.localStorage.setItem('token', this.kindOfUser.token);
 
