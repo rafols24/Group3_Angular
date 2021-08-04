@@ -82,13 +82,14 @@ export class ProductListComponent implements OnInit {
 //     this.http.get(this.productUrl).subscribe((data:any) => {
 
 
-        this.product = data.message;  
+//         this.product = data.message;  
     
-        console.log(data);
-     });
-  }
+//         console.log(data);
+//      });
+//   }
 
  
 
 
+}]
 }
