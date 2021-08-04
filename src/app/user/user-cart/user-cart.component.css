@@ -4,3 +4,26 @@
     height: 200px;
     margin-top: 355px;
 }
+.wrapper{
+    position: relative;
+    margin-left: 100px;
+
+}
+table{
+    position: relative;
+    table-layout: auto;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+h4{
+    text-align: center;
+    margin-top: 30px;
+}
+.container {
+    display: flex;
+}
+.form{
+    margin-top: 10%;
+}
