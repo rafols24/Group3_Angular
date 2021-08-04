@@ -9,10 +9,12 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomepageComponent implements OnInit {
 
+
   
   product: any;
   products: any;
   productDetails: any;
+
 
   isShown = false;
   productUrl = "http://127.0.0.1:8000/api/product/getAllProducts"; 
@@ -24,14 +26,17 @@ export class HomepageComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.http.get(this.productUrl).subscribe((product:any) => {
-      // this.productDetails = product.map(product => {
-        this.product = product.message;  
-      //   this.products.show = false;
-      // return product;
+
+    this.http.get(this.productUrl).subscribe((data:any) => {
+      this.product = data.message;  
+      data.show = false;
+      return data;
       console.log(this.product);
-    //  });
-      
+
+//     this.http.get(this.productUrl).subscribe((product:any) => {
+//         this.product = product.message;  
+//       console.log(this.product);
+   
    });
   }
 

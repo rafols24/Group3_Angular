@@ -11,10 +11,15 @@
         <app-admin-sidebar></app-admin-sidebar>
         </div>
 
+
+<!-- table -->
+<div class="wrapper" style="margin-left: 20px;">
+
      <div style="margin-top: 100px;">
       <h4>OUR VALUED CUSTOMERS</h4>
     </div>
 <div class="container" style="margin-left: 190px;">
+
 
 
     <br>
@@ -29,7 +34,9 @@
         </thead>
         <tbody *ngFor="let customer of customers">
           <tr>
-           
+
+            <th scope="row">1</th>
+
             <td>{{customer.firstname}}</td>
             <td>{{customer.lastname}}</td>
             <td>{{customer.username}}</td>
@@ -40,6 +47,8 @@
         </tbody>
       </table>
     </div>
+
+
 
 <!-- <div>
   <app-admin-sidebar></app-admin-sidebar>
@@ -69,8 +78,9 @@
         </tr>
       </tbody>
     </table>
-  </div>
+  </div> -->
 
- -->
-<!-- table -->
+
+
+
 

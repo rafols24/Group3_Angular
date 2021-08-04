@@ -66,9 +66,33 @@ export class ProductListComponent implements OnInit {
     name: "Nike Shirt",
     price: 500,
     description: "You should not misseed the limited editionof this nike shirt"
+
+
+
+//   product: any;
+
+//   productUrl = "http://127.0.0.1:8000/api/product/getAllProducts"; 
+
+
+//   constructor(
+//     private router: Router,
+//     private http: HttpClient
+//   ) { }
+
+//   ngOnInit(): void {
+//     this.http.get(this.productUrl).subscribe((data:any) => {
+
+
+        this.product = data.message;  
+    
+        console.log(data);
+     });
+  }
   },]
 }
  
 
+
+ 
 
 
