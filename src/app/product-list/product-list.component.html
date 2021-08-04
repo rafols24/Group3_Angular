@@ -2,6 +2,7 @@
     <app-top-bar></app-top-bar>
 </div>
 
+<div>
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -79,6 +80,7 @@
     <h4 class="featured">FEATURED PRODUCTS</h4>
 </div>
 <br>
+<<<<<<< HEAD
 
 
 <!-- 
@@ -87,12 +89,21 @@
         <div class="col" *ngFor="let product of products">
             <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 16rem;" [title]="'Click to see the ' + product.name + ' details'" >
                 <img src="../../assets/imgs/sample2.jpg" class="card-img-top" alt="...">
+=======
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 16rem;">
+              <img src="" alt="">
+>>>>>>> bb37f305d04758b80c01f26bd8f4d769b9175c05
                 <div class="card-body tag">
-                    <h5>{{product.name}}</h5>
-                    <h6>Php {{product.price}}.00</h6>
+                    <h5>Name: </h5>
+                    <h6>Price: </h6>
+                    <button class="primary cartBtn" routerLink="/product-details">View Details</button><br>
                     <button class="primary cartBtn"> Add to Cart</button>
                 </div>
             </div>
+<<<<<<< HEAD
         </div>
     </div>
 
@@ -356,6 +367,12 @@
             </div>
         </div>
     </div>
+=======
+
+        </div>
+    </div>
+</div>
+>>>>>>> bb37f305d04758b80c01f26bd8f4d769b9175c05
 
 </div>
 <br><br><br>

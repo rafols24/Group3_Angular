@@ -26,7 +26,9 @@ import { AdminTopbarComponent } from './admin-side/admin-topbar/admin-topbar.com
 import { AdminSidebarComponent } from './admin-side/admin-sidebar/admin-sidebar.component';
 import { AdminFooterComponent } from './admin-side/admin-footer/admin-footer.component';
 import { AddProductComponent } from './admin-side/add-product/add-product.component';
-import { ProductsComponent } from './products/products.component';
+import { UserCartComponent } from './user/user-cart/user-cart.component';
+import { UserOrderComponent } from './user/user-order/user-order.component';
+import { AdminProductComponent } from './admin/admin-product/admin-product.component';
 
 
 
@@ -55,7 +57,9 @@ import { ProductsComponent } from './products/products.component';
      AdminSidebarComponent,
      AdminFooterComponent,
      AddProductComponent,
-     ProductsComponent
+     UserCartComponent,
+     UserOrderComponent,
+     AdminProductComponent
 
 
   ],
