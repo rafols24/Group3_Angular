@@ -9,10 +9,13 @@ import { Router } from '@angular/router';
 })
 export class AllProductsComponent implements OnInit {
 
-  product: any;
   isShown = false;
-  productUrl = "http://127.0.0.1:8000/api/product/getAllProducts"; 
   show:boolean;
+  
+  product: any;
+
+  productUrl = "http://127.0.0.1:8000/api/product/getAllProducts"; 
+ 
 
   constructor(
     private router: Router,

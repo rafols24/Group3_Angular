@@ -11,6 +11,7 @@ export class HomepageComponent implements OnInit {
 
   
   product: any;
+  products: any;
   productDetails: any;
 
   isShown = false;
@@ -24,12 +25,12 @@ export class HomepageComponent implements OnInit {
 
   ngOnInit(): void {
     this.http.get(this.productUrl).subscribe((product:any) => {
-      this.productDetails = product.map(product => {
+      // this.productDetails = product.map(product => {
         this.product = product.message;  
-        product.show = false;
-      return product;
+      //   this.products.show = false;
+      // return product;
       console.log(this.product);
-     });
+    //  });
       
    });
   }
