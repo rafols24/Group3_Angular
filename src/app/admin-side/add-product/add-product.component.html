@@ -5,8 +5,8 @@
    <div>
    <app-admin-sidebar></app-admin-sidebar>
    </div>
-   <div class="card" style="width: 30rem;margin-left: 520px; margin-top: 40px;">
-    <img src="../../../assets/imgs/Nike1.jpg" class="card-img-top" alt="..." height="140px">
+   <div class="card" style="width: 60rem;margin-left: 250px; margin-top: 40px;">
+    <!-- <img src="../../../assets/imgs/Nike1.jpg" class="card-img-top" alt="..." height="140px"> -->
    <h4 style="color: black; text-align: center;">ADD PRODUCT</h4>
     <div class="card-body">
       <form (ngSubmit)="product.valid && onSubmit()" [formGroup]="product" class="addproduct-form" id="addproduct-form">
@@ -31,7 +31,6 @@
             <textarea class="form-control" id="description" rows="3" formControlName="description" placeholder="Enter your product description" [ngClass]="{'is-invalid' : product.get('description').touched && product.get('description').invalid}"></textarea>
             <div *ngIf="product.get('description').touched && product.get('description').invalid" class="invalid-feedback">
               <p  class="validate" *ngIf="product.get('description').errors.required">Product description is required!</p>
-              <p  class="validate" *ngIf="product.get('description').errors.minlength">Product description must be atleat 15 characters</p>
             </div>
           </div>
           <div class="mb-3">

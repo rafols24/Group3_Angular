@@ -3,11 +3,11 @@ import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-homepage',
-  templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.css']
+  selector: 'app-product-of-admin',
+  templateUrl: './product-of-admin.component.html',
+  styleUrls: ['./product-of-admin.component.css']
 })
-export class HomepageComponent implements OnInit {
+export class ProductOfAdminComponent implements OnInit {
 
   
   product: any;
@@ -23,13 +23,14 @@ export class HomepageComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.http.get(this.productUrl).subscribe((product:any) => {
-      this.productDetails = product.map(product => {
-        this.product = product.message;  
-        product.show = false;
-      return product;
+    this.http.get(this.productUrl).subscribe((data:any) => {
+      // this.productDetails = data.map(product => {
+        this.product = data.message;  
+
+      data.show = false;
+      return data;
       console.log(this.product);
-     });
+    //  });
       
    });
   }
@@ -42,5 +43,5 @@ export class HomepageComponent implements OnInit {
   hideDetail(){
     this.isShown = false;
   }
-  
+
 }

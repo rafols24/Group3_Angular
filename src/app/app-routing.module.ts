@@ -13,7 +13,7 @@ import { CustomersComponent } from './admin-side/customers/customers.component';
 import { OrderComponent } from './admin-side/order/order.component';
 import { UserCartComponent } from './../app/user/user-cart/user-cart.component';
 import { UserOrderComponent } from './../app/user/user-order/user-order.component';
-import { AdminProductComponent } from './../app/admin-side/admin-product/admin-product.component';
+import { ProductOfAdminComponent } from './../app/admin-side/product-of-admin/product-of-admin.component'
 
 
 
@@ -35,7 +35,9 @@ const routes: Routes = [
   { path: 'cart', component: CartComponent, pathMatch: 'full'},
   { path: 'user-cart', component: UserCartComponent, pathMatch: 'full'},
   { path: 'user-order', component: UserOrderComponent, pathMatch: 'full'},
-  { path: 'products', component: AdminProductComponent, pathMatch: 'full'},
+  { path: 'products', component: ProductOfAdminComponent, pathMatch: 'full'},
+
+
 
   
  
