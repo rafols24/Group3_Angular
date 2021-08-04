@@ -63,7 +63,7 @@ import { AdminprofileComponent } from './adminprofile/adminprofile.component';
      AddProductComponent,
      UserCartComponent,
      UserOrderComponent,
-     AdminProductComponent
+     AdminProductComponent,
      ProductOfAdminComponent,
      AdminprofileComponent,
     
