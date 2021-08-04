@@ -29,6 +29,10 @@ import { AddProductComponent } from './admin-side/add-product/add-product.compon
 import { UserCartComponent } from './user/user-cart/user-cart.component';
 import { UserOrderComponent } from './user/user-order/user-order.component';
 import { AdminProductComponent } from './admin/admin-product/admin-product.component';
+import { ProductOfAdminComponent } from './admin-side/product-of-admin/product-of-admin.component';
+import { AdminprofileComponent } from './adminprofile/adminprofile.component';
+
+
 
 
 
@@ -48,18 +52,22 @@ import { AdminProductComponent } from './admin/admin-product/admin-product.compo
 //     HeaderComponent
 
     HomepageComponent,
+    AdminTopbarComponent,
      SideBarComponent,
     UserTopBarComponent,
      AdminComponent,
      OrderComponent,
      CustomersComponent,
-     AdminTopbarComponent,
      AdminSidebarComponent,
      AdminFooterComponent,
      AddProductComponent,
      UserCartComponent,
      UserOrderComponent,
      AdminProductComponent
+     ProductOfAdminComponent,
+     AdminprofileComponent,
+    
+
 
 
   ],

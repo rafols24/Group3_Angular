@@ -25,7 +25,7 @@ export class AddProductComponent implements OnInit {
     this.product = this.formBuilder.group({
       product_name: ['', [Validators.required, Validators.minLength(2)]],
       price: ['', [Validators.required, Validators.minLength(3)]],
-      description: ['', [Validators.required, Validators.minLength(15)]],
+      description: ['', [Validators.required]],
       product_image: ['', [Validators.required]],
     });
   }

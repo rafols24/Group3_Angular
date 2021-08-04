@@ -23,6 +23,7 @@
                         <input type="text" class="form-control" formControlName="username"
                         [ngClass]="{'is-invalid' : userLogin.get('username').touched && userLogin.get('username').invalid}"
                          placeholder="Enter username">
+                         <br>
                          <div *ngIf="userLogin.get('username').touched && userLogin.get('username').invalid" class="invalid-feedback">
                             <p class="validate" *ngIf="userLogin.get('username').errors.required">Username is required</p>
                             <p class="validate" *ngIf="userLogin.get('username').errors.minlength">Username must be valid</p>
@@ -31,7 +32,7 @@
 
                     <div class="form-group">
                         <input type="password" class="form-control" formControlName="password" 
-                        [ngClass]="{'is-invalid' : userLogin.get('password').touched && userLogin.get('password').invalid}" placeholder="Password">
+                        [ngClass]="{'is-invalid' : userLogin.get('password').touched && userLogin.get('password').invalid}" placeholder="Password"><br>
                         <div *ngIf="userLogin.get('password').touched && userLogin.get('password').invalid" class="invalid-feedback">
                             <p class="validate" *ngIf="userLogin.get('password').errors.required">Password is required</p>
                             <p class="validate" *ngIf="userLogin.get('password').errors.minlength">Password must be atleast 8 characters</p>

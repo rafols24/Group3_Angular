@@ -7,7 +7,11 @@
       <div class="col" *ngFor="let products of product">
         <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 16rem;" [title]="'Click to see the ' + products.product_name + ' details'">
           <div>
-            <img [src]="products.product_image" alt="" width="100%">
+
+<!--             <img [src]="products.product_image" alt="" width="100%"> -->
+
+            <img [src]="products.product_image" alt="" width="100%" height="200px">
+
           </div>
           <div class="card-body">
             <h6>Name: {{products.product_name}}</h6>

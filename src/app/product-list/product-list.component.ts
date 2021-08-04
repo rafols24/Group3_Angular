@@ -68,6 +68,7 @@ export class ProductListComponent implements OnInit {
     description: "You should not misseed the limited editionof this nike shirt"
 
 
+
 //   product: any;
 
 //   productUrl = "http://127.0.0.1:8000/api/product/getAllProducts"; 
@@ -87,8 +88,11 @@ export class ProductListComponent implements OnInit {
         console.log(data);
      });
   }
+  },]
+}
+ 
+
 
  
 
 
-}
