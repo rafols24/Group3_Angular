@@ -18,6 +18,7 @@
                     <h6>Php {{products.price}}.00</h6>
                     <button class="primary cartBtn" (click)="showDetail(product)"
                         [title]="'Click to see the ' + products.name + ' details'">View Details</button>
+                        <button class="primary cartBtn" (click)="deleteProduct(products.id)">Remove</button>
                 </div>
             </div>
         </div>

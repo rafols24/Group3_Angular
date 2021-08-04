@@ -7,15 +7,14 @@
         <app-admin-sidebar></app-admin-sidebar>
         </div>
 
-<!-- table -->
-<div class="wrapper" style="margin-left: 20px;">
+<!-- table -->     <h4>OUR VALUED CUSTOMERS</h4>
+<div class="container" style="margin-left: 190px;">
 
-    <h4>OUR VALUED CUSTOMERS</h4>
+
     <br>
     <table class="table table-striped">
         <thead>
           <tr>
-            <th scope="col">#</th>
             <th scope="col">FirstName</th>
             <th scope="col">LastName</th>
             <th scope="col">UserName</th>
@@ -24,12 +23,12 @@
         </thead>
         <tbody *ngFor="let customer of customers">
           <tr>
-            <th scope="row">1</th>
+           
             <td>{{customer.firstname}}</td>
             <td>{{customer.lastname}}</td>
             <td>{{customer.username}}</td>
             <td>
-            <button type="button" class="btn btn-outline-primary" onclick="location.href='#'">Delete</button>
+            <button type="button" class="btn btn-outline-primary" (click)="deleteCustomer(customer.id)">Delete</button>
             </td>
           </tr>
         </tbody>
