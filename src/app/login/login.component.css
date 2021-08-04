@@ -400,8 +400,8 @@ display-flex, .display-flex, .display-flex-center, .signup-content, .signin-cont
     background: #e72734; }
   
   .signin-form {
-    margin-right: 90px;
-    margin-left: 80px; }
+    margin-right: auto;
+    margin-left: auto; }
   
   .signin-image {
     margin-left: 110px;

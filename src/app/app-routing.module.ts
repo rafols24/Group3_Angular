@@ -11,6 +11,13 @@ import { AdminComponent } from './../app/admin-side/admin/admin.component';
 import { AddProductComponent } from './../app/admin-side/add-product/add-product.component'
 import { CustomersComponent } from './admin-side/customers/customers.component';
 import { OrderComponent } from './admin-side/order/order.component';
+import { UserCartComponent } from './../app/user/user-cart/user-cart.component';
+import { UserOrderComponent } from './../app/user/user-order/user-order.component';
+import { AdminProductComponent } from './../app/admin-side/admin-product/admin-product.component';
+
+
+
+
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -25,7 +32,12 @@ const routes: Routes = [
   { path: 'addproduct', component: AddProductComponent, pathMatch: 'full'},
   { path: 'customers', component: CustomersComponent, pathMatch: 'full'},
   { path: 'order', component: OrderComponent, pathMatch: 'full'},
-  { path: 'order', component: OrderComponent, pathMatch: 'full'},
+  { path: 'cart', component: CartComponent, pathMatch: 'full'},
+  { path: 'user-cart', component: UserCartComponent, pathMatch: 'full'},
+  { path: 'user-order', component: UserOrderComponent, pathMatch: 'full'},
+  { path: 'products', component: AdminProductComponent, pathMatch: 'full'},
+
+  
  
 ];
 

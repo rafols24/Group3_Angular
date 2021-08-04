@@ -2,6 +2,7 @@
     <app-top-bar></app-top-bar>
 </div>
 
+<div>
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -78,66 +79,22 @@
     <h4 class="featured">FEATURED PRODUCTS</h4>
 </div>
 <br>
-
-
-
 <div class="container">
     <div class="row">
-        <div class="col" *ngFor="let product of products">
-            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 16rem;" [title]="'Click to see the ' + product.name + ' details'" routerLink="/product-details">
-                <img src="../../assets/imgs/sample2.jpg" class="card-img-top" alt="...">
+        <div class="col">
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 16rem;">
+              <img src="" alt="">
                 <div class="card-body tag">
-                    <h5>{{product.name}}</h5>
-                    <h6>Php {{product.price}}.00</h6>
+                    <h5>Name: </h5>
+                    <h6>Price: </h6>
+                    <button class="primary cartBtn" routerLink="/product-details">View Details</button><br>
                     <button class="primary cartBtn"> Add to Cart</button>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
-
-<!-- <div class="line">
-    <hr class="new2">
-</div>
-<div class="details shadow-sm p-3 mb-5 bg-body rounded border-top" style="color: black;">
-    <h3 class="quest">What are you waiting for? <br> &nbsp;&nbsp;&nbsp;&nbsp; Get Yours Now!</h3>
-    <br>
-
-    <div class="container">
-        <div style="margin-left: 310px;">
-            <div style="margin-top: 35px;">
-                <h6><b>STILL CAN'T FIND WHAT</b>
-                    <br>
-                    <b>YOU'RE LOOKING FOR?</b>
-                </h6>
-            </div>
-        </div>
-
-        <div class="vl" style="margin-left: 18px;">
-            <div style="margin-left: 15px;margin-top: 35px;">
-                <button class="rounded-pill" routerLink="/all-products">Shop All</button>
-            </div>
-        </div>
-    </div>
-
-    <div style="margin-top: -13px;">
-        <hr class="new3">
-    </div>
-
-    <div class="brand">
-        <h3 style="color: black;">About Nike</h3>
-    </div>
-    <div class="container detail">
-        <div style="margin-left: 25%;">
-            <img src="../../assets/imgs/sample2.png" alt="Logo">
-        </div>
-        <div style="padding: 3px;margin-left: 2%;">
-            The brand is famous for its swoosh logo and tagline that states “Just do it.”. They have become one of the most recognizable visual brand elements. Originally a styled version of the name served as the logo, later combined with a swoosh. Registered Designs
-            protects the external shape and aesthetics of the product. Registering these designs gives the owner monopoly rights over the product. This exclusivity of rights allows the owner to stop anyone copying the external design of their product
-            within the registered territory
-        </div>
-    </div>
-</div> -->
 
 
 <div class="footer">

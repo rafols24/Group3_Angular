@@ -29,9 +29,15 @@ h6 {
 hr.new2 {
     border-top: 2px solid black;
     border-radius: 5px;
+
+/*     width: 100%;
+   
+  } */
+
     width: 30%;
     margin-left: 470px;
 }
+
 
 hr.new3 {
     border-top: 2px solid black;
