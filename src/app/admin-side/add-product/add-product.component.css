@@ -1,0 +1,11 @@
+
+.footer{
+    clear: both;
+    position: relative;
+    height: 200px;
+}
+.validate{
+    font-size: 12px;
+    color: red;
+    margin-top: 15px;
+}

@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -11,7 +13,23 @@ import { AllProductsComponent } from './all-products/all-products.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
-import { HeaderComponent } from './header/header.component';
+
+// import { HeaderComponent } from './header/header.component';
+
+import { HomepageComponent } from './user/homepage/homepage.component';
+import { SideBarComponent } from './user/side-bar/side-bar.component';
+import { UserTopBarComponent } from './user/user-top-bar/user-top-bar.component';
+import { AdminComponent } from './../app/admin-side/admin/admin.component';
+import { OrderComponent } from './admin-side/order/order.component';
+import { CustomersComponent } from './admin-side/customers/customers.component';
+import { AdminTopbarComponent } from './admin-side/admin-topbar/admin-topbar.component';
+import { AdminSidebarComponent } from './admin-side/admin-sidebar/admin-sidebar.component';
+import { AdminFooterComponent } from './admin-side/admin-footer/admin-footer.component';
+import { AddProductComponent } from './admin-side/add-product/add-product.component';
+import { ProductsComponent } from './products/products.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -24,11 +42,28 @@ import { HeaderComponent } from './header/header.component';
     LoginComponent,
     RegisterComponent,
     ProductDetailsComponent,
-    HeaderComponent
+
+//     HeaderComponent
+
+    HomepageComponent,
+     SideBarComponent,
+    UserTopBarComponent,
+     AdminComponent,
+     OrderComponent,
+     CustomersComponent,
+     AdminTopbarComponent,
+     AdminSidebarComponent,
+     AdminFooterComponent,
+     AddProductComponent,
+     ProductsComponent
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     
   ],
   providers: [],
