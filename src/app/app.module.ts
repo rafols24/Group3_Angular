@@ -29,6 +29,7 @@ import { AddProductComponent } from './admin-side/add-product/add-product.compon
 import { UserCartComponent } from './user/user-cart/user-cart.component';
 import { UserOrderComponent } from './user/user-order/user-order.component';
 import { ProductOfAdminComponent } from './admin-side/product-of-admin/product-of-admin.component';
+import { AdminprofileComponent } from './adminprofile/adminprofile.component';
 
 
 
@@ -61,6 +62,7 @@ import { ProductOfAdminComponent } from './admin-side/product-of-admin/product-o
      UserCartComponent,
      UserOrderComponent,
      ProductOfAdminComponent,
+     AdminprofileComponent,
     
 
 
