@@ -1,13 +1,10 @@
 
 
 <div class="sidenav">
-    <div style="margin-top: -21px;background-color: #414141;; height: 67px;padding:5px;" routerLink="/admin">
-      <h1 style="margin-top: 10px;color: black;">Nike Logo</h1>
-    </div>
       <br>
-      <button  class="side" routerLink='/addproduct'>Add Product</button><br>
+      <!-- <button  class="side" routerLink='/addproduct'>Add Product</button><br>
       <button  class="side" routerLink='/products'>Products</button><br>
-      <button class="side" routerLink='/customers'>Customer</button> <br>
+      <button class="side" routerLink='/customers'>Customer</button> <br> -->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" class="side"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Order
@@ -54,8 +51,12 @@
                   </a>
               </li>
                 <li>
-                    <a class="s-sidebar__nav-link" routerLink='/order'>
-                        <i class="fa fa-cart-plus"></i><em>Orders</em>
+                    <a class="s-sidebar__nav-link" >
+                        <i class="fa fa-cart-plus"></i><em class="nav-link dropdown-toggle" href="#" class="side"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Orders</em>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" routerLink='/order'>Pending</a></li>
+                          <li><a class="dropdown-item" routerLink='/approved'>Approved</a></li>
+                        </ul>
                     </a>
                 </li>
 
