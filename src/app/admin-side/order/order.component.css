@@ -1,9 +1,4 @@
-.footer{
-    clear: both;
-    position: relative;
-    height: 200px;
-    margin-top: 537px;
-}
+
 table{
     position: relative;
     table-layout: auto;
@@ -24,9 +19,11 @@ table{
 
     
 }
-h4{
+h2{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 1000;
 }
 .container{
     margin-left: auto;
