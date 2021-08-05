@@ -1,11 +1,12 @@
-.footer{
-    clear: both;
-    position: relative;
-    height: 200px;
-    margin-top: 200px;
-}
-hr.new2 {
-    border-top: 2px solid black;
-    border-radius: 5px;
-    width: 100%;
-  }
+    .footer {
+        clear: both;
+        position: relative;
+        height: 200px;
+        margin-top: 200px;
+    }
+    
+    hr.new2 {
+        border-top: 2px solid black;
+        border-radius: 5px;
+        width: 100%;
+    }

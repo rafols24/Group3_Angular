@@ -3,11 +3,65 @@
     <app-user-top-bar></app-user-top-bar>
 </div>
 
+
 <div class="container">
     <div class="wrapper">
         <h4>MY CART</h4>
         <br>
         <table class="table table-striped">
+
+
+
+
+<!--     <h4>MY CART</h4>
+    <br>
+    <table class="table table-striped" style="width:69%;"> -->
+        <thead>
+            <tr>
+                <th><input type="checkbox" [checked]="allIsSelected"> All</th>
+                <th scope="col">Product Image</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Product Price</th>
+                <th scope="col" width="40%">Description</th>
+                <th scope="col">Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td><input type="checkbox" (change)="selectProduct(product.id)"></td>
+                <td>
+                    <img [src]="product.product_image" width="100" alt="" srcset="">
+                </td>
+                <td>{{ product.product_name }}</td>
+                <td>{{ product.price }}</td>
+                <td>{{ product.description }}</td>
+                <td>
+                    <button (click)="minus(product)"> - </button>
+                    {{ product.pivot.qty }}
+                    <button (click)="plus(product)"> + </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+<div class="card" style="width: 14rem;float: right;margin-top: -200px;">
+    <div class="card-body">
+        <h5 id="form3Example1">Php {{ total }}</h5>
+        <label class="form-label" for="form3Example1">SubTotal</label><br>
+
+        <h5 id="form3Example2">COD</h5>
+        <label class="form-label" for="form3Example2">Payment Method</label>
+        <br>
+
+
+<!--         <button type="button" class="btn btn-primary btn-block mb-4" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Check Out</button> -->
+
+<!--         <table class="table table-striped">
+
             <thead>
                 <tr>
                     <th><input type="checkbox" [checked]="allIsSelected"> All</th>
@@ -16,6 +70,10 @@
                     <th scope="col">Product Price</th>
                     <th scope="col">Description</th>
                     <th scope="col">Quantity</th>
+
+
+<!--  <th scope="col">Action</th> -->
+
                 </tr>
             </thead>
             <tbody>
@@ -28,20 +86,29 @@
                     <td>{{ product.price }}</td>
                     <td>{{ product.description }}</td>
                     <td>
+
                         <button (click) ="minus(product)" style="width:3px;height:3px"> - </button><br>
                         {{ product.pivot.qty }} <br>
                         <button (click)="plus(product)" style="width:5px;height:5px"> + </button>
+
+<!--                         <button (click) ="minus(product)"> - </button>
+                        {{ product.pivot.qty }}
+                        <button (click)="plus(product)"> + </button> -->
+
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
+
     &nbsp; &nbsp;&nbsp;
+
     <div class="form">
         <form>
             <div class="row mb-2">
                 <div class="col">
                     <div class="form-outline">
+
                         <h5 id="form3Example1"> <b>Php {{ total }}</b></h5>
                         <label class="form-label" for="form3Example1">SubTotal</label>
                     </div>
@@ -49,12 +116,23 @@
                 <div class="col">
                     <div class="form-outline">
                         <h5 id="form3Example2"> <b>COD</b> </h5>
+
+<!--                         <h5 id="form3Example1">php {{ total }}</h5>
+                        <label class="form-label" for="form3Example1">SubTotal</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline">
+                        <h5 id="form3Example2">COD</h5> -->
+
                         <label class="form-label" for="form3Example2">Payment Method</label>
                     </div>
                 </div>
             </div>
             <button type="button" class="btn btn-primary btn-block mb-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Check Out</button>
+
         </form>
+
     </div>
 </div>
 
@@ -118,7 +196,7 @@
     </div>
 </div>
 <!-- - -->
-<div class="footer" style="position: relative;">
+<div class="footer">
     <app-footer></app-footer>
 </div>
 

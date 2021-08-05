@@ -33,6 +33,8 @@ import { ProductOfAdminComponent } from './admin-side/product-of-admin/product-o
 import { AdminprofileComponent } from './adminprofile/adminprofile.component';
 import {FormsModule} from '@angular/forms';
 import { ApprovedProductsComponent } from './admin-side/approved-products/approved-products.component';
+import { UserprofileComponent } from './userprofile/userprofile.component';
+
 
 
 
@@ -69,6 +71,8 @@ import { ApprovedProductsComponent } from './admin-side/approved-products/approv
      ProductOfAdminComponent,
      AdminprofileComponent,
      ApprovedProductsComponent,
+     UserprofileComponent,
+
     
 
 
