@@ -27,16 +27,16 @@
 
 
 
-<div style="margin-top: 90px; margin-left:25%;" *ngIf="isShown">
+<div style="margin-top: 20%; margin-left:25%;" *ngIf="isShown">
     <div class="container">
-        <div class="col" *ngFor="let products of product">
+        <div class="col">
             <div class="card" style="width: 30rem;">
                 <div class="card-body">
                     <img [src]="products.product_image" alt="" width="100%">
                 </div>
             </div>
         </div>
-        <div class="col" *ngFor="let products of product">
+        <div class="col">
             <h3><b>{{products.product_name}}</b></h3>
             <hr class="new2">
             <h5>{{products.description}}</h5>
