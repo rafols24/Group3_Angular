@@ -1,51 +1,51 @@
-<div style="margin-top: -25px;">
+<!-- <div style="margin-top: -25px;">
     <app-admin-topbar></app-admin-topbar>
    </div>
-   
-   <div>
-   <app-admin-sidebar></app-admin-sidebar>
-   </div>
-   <div class="card" style="width: 60rem;margin-left: 250px; margin-top: 130px;">
+    -->
+<div>
+    <app-admin-sidebar></app-admin-sidebar>
+</div>
+<div class="card" style="width: 60rem;margin-left: 250px; margin-top: 130px;">
     <!-- <img src="../../../assets/imgs/Nike1.jpg" class="card-img-top" alt="..." height="140px"> -->
-   <h4 style="color: black; text-align: center;">ADD PRODUCT</h4>
+    <h4 style="color: black; text-align: center;">ADD PRODUCT</h4>
     <div class="card-body">
-      <form (ngSubmit)="product.valid && onSubmit()" [formGroup]="product" class="addproduct-form" id="addproduct-form">
-        <div class="mb-3">
-            <label for="name" class="form-label">Product name</label>
-            <input type="text" class="form-control" formControlName="product_name" id="product_name" placeholder="Enter your product name" [ngClass]="{'is-invalid' : product.get('product_name').touched && product.get('product_name').invalid}">
-            <div *ngIf="product.get('product_name').touched && product.get('product_name').invalid" class="invalid-feedback">
-              <p  class="validate" *ngIf="product.get('product_name').errors.required">Product name is required!</p>
-              <p  class="validate" *ngIf="product.get('product_name').errors.minlength">Product name must be atleat 2 characters</p>
+        <form (ngSubmit)="product.valid && onSubmit()" [formGroup]="product" class="addproduct-form" id="addproduct-form">
+            <div class="mb-3">
+                <label for="name" class="form-label">Product name</label>
+                <input type="text" class="form-control" formControlName="product_name" id="product_name" placeholder="Enter your product name" [ngClass]="{'is-invalid' : product.get('product_name').touched && product.get('product_name').invalid}">
+                <div *ngIf="product.get('product_name').touched && product.get('product_name').invalid" class="invalid-feedback">
+                    <p class="validate" *ngIf="product.get('product_name').errors.required">Product name is required!</p>
+                    <p class="validate" *ngIf="product.get('product_name').errors.minlength">Product name must be atleat 2 characters</p>
+                </div>
             </div>
-          </div>
-          <div class="mb-3">
-            <label for="price" class="form-label">Price </label>
-            <input type="text" class="form-control" formControlName="price" id="price" placeholder="Enter your product price" [ngClass]="{'is-invalid' : product.get('price').touched && product.get('price').invalid}">
-            <div *ngIf="product.get('price').touched && product.get('price').invalid" class="invalid-feedback">
-              <p  class="validate" *ngIf="product.get('price').errors.required">Product price is required!</p>
-              <p  class="validate" *ngIf="product.get('price').errors.minlength">Product price must be atleat 3 characters</p>
+            <div class="mb-3">
+                <label for="price" class="form-label">Price </label>
+                <input type="text" class="form-control" formControlName="price" id="price" placeholder="Enter your product price" [ngClass]="{'is-invalid' : product.get('price').touched && product.get('price').invalid}">
+                <div *ngIf="product.get('price').touched && product.get('price').invalid" class="invalid-feedback">
+                    <p class="validate" *ngIf="product.get('price').errors.required">Product price is required!</p>
+                    <p class="validate" *ngIf="product.get('price').errors.minlength">Product price must be atleat 3 characters</p>
+                </div>
             </div>
-          </div>
-          <div class="mb-3">
-            <label for="description" class="form-label">Description</label>
-            <textarea class="form-control" id="description" rows="3" formControlName="description" placeholder="Enter your product description" [ngClass]="{'is-invalid' : product.get('description').touched && product.get('description').invalid}"></textarea>
-            <div *ngIf="product.get('description').touched && product.get('description').invalid" class="invalid-feedback">
-              <p  class="validate" *ngIf="product.get('description').errors.required">Product description is required!</p>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control" id="description" rows="3" formControlName="description" placeholder="Enter your product description" [ngClass]="{'is-invalid' : product.get('description').touched && product.get('description').invalid}"></textarea>
+                <div *ngIf="product.get('description').touched && product.get('description').invalid" class="invalid-feedback">
+                    <p class="validate" *ngIf="product.get('description').errors.required">Product description is required!</p>
+                </div>
             </div>
-          </div>
-          <div class="mb-3">
-            <label for="image" class="form-label" >Image</label>
-            <input type="text" class="form-control" formControlName="product_image" id="product_image" placeholder="Paste image address" [ngClass]="{'is-invalid' : product.get('product_image').touched && product.get('product_image').invalid}">
-            <div *ngIf="product.get('product_image').touched && product.get('product_image').invalid" class="invalid-feedback">
-              <p  class="validate" *ngIf="product.get('product_image').errors.required">Product description is required!</p>
+            <div class="mb-3">
+                <label for="image" class="form-label">Image</label>
+                <input type="text" class="form-control" formControlName="product_image" id="product_image" placeholder="Paste image address" [ngClass]="{'is-invalid' : product.get('product_image').touched && product.get('product_image').invalid}">
+                <div *ngIf="product.get('product_image').touched && product.get('product_image').invalid" class="invalid-feedback">
+                    <p class="validate" *ngIf="product.get('product_image').errors.required">Product description is required!</p>
+                </div>
             </div>
-          </div>
-          <button class="btn btn-outline-primary" type="submit" [disabled]="!product.valid">Submit</button>
-      </form>
+            <button class="btn btn-outline-primary" type="submit" [disabled]="!product.valid">Submit</button>
+        </form>
     </div>
-  </div>
-   lmAMKJNJ
-   
+</div>
+lmAMKJNJ
+
 <!--    
      <div class="footer">
        <app-admin-footer></app-admin-footer>

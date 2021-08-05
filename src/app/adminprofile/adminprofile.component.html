@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js">
-<app-admin-topbar></app-admin-topbar>
+<!-- <app-admin-topbar></app-admin-topbar> -->
 <br>
 <br>
 
@@ -9,27 +9,36 @@
     <div class="d-flex align-items-start py-5 border-bottom"> <img src="../../../../../assets/img/admin.png" class="img" alt="" width="30px">
 
         <br>
-        <div class="pl-sm-4 pl-2" id="img-section"> <h3>Profile Photo</h3>
-            <h5>Be mindful with your own account</h5> 
+        <div class="pl-sm-4 pl-2" id="img-section">
+            <h3>Profile Photo</h3>
+            <h5>Be mindful with your own account</h5>
         </div>
     </div>
     <div class="py-2">
         <div class="row py-2">
-            <div class="col-md-6"> <h5>First Name</h5> <p></p></div>
-            <div class="col-md-6 pt-md-0 pt-3"> <h5>Last Name</h5> <p></p> </div>
+            <div class="col-md-6">
+                <h5>First Name</h5>
+                <p></p>
+            </div>
+            <div class="col-md-6 pt-md-0 pt-3">
+                <h5>Last Name</h5>
+                <p></p>
+            </div>
         </div>
         <div class="row py-2">
-            <div class="col-md-6"> <h5>Username</h5> <p></p> </div>
-            
+            <div class="col-md-6">
+                <h5>Username</h5>
+                <p></p>
+            </div>
+
             <!-- <div class="col-md-6 pt-md-0 pt-3"> <label for="phone">Phone Number</label> <input type="tel" class="bg-light form-control" > </div> -->
         </div>
-        
+
         <div class="d-sm-flex align-items-center pt-3" id="deactivate">
             <div> <b>You mean so much with us</b>
                 <p>Please dont forget to update your profile</p>
             </div>
-            <div class="ml-auto"> <button class="btn danger" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">Change</button> </div>
+            <div class="ml-auto"> <button class="btn danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Change</button> </div>
         </div>
     </div>
 </div>
@@ -43,7 +52,7 @@ modal -->
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel" >Update profile</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Update profile</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -92,7 +101,7 @@ modal -->
     var myModal = document.getElementById('myModal')
     var myInput = document.getElementById('myInput')
 
-    myModal.addEventListener('shown.bs.modal', function () {
+    myModal.addEventListener('shown.bs.modal', function() {
         myInput.focus()
     })
 </script>
