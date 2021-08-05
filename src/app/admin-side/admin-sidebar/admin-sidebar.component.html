@@ -1,55 +1,24 @@
 
-
-<div class="sidenav">
-      <br>
-      <!-- <button  class="side" routerLink='/addproduct'>Add Product</button><br>
-      <button  class="side" routerLink='/products'>Products</button><br>
-      <button class="side" routerLink='/customers'>Customer</button> <br> -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" class="side"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Order
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" routerLink='/order'>Pending</a></li>
-          <li><a class="dropdown-item" routerLink='/approved'>Approved</a></li>
-        </ul>
-      </li>
-
-
-<!-- <div class="sidenav"><br><br><br>
-      <button  class="side" routerLink='/addproduct'>Add Product</button><br><br>
-      <button  class="side" routerLink='/products'>Products</button><br><br>
-      <button class="side" routerLink='/customers'>Customer</button><br><br>
-      <button class="side" routerLink='/order'> Order</button>
- -->
-    </div>
-   -->
-
- 
     <!-- Sidebar -->
-    <div class="s-layout__sidebar">
-        <a class="s-sidebar__trigger" href="#0">
-            <i class="fa fa-bars"></i>
-        </a>
-
+     <div class="s-layout__sidebar">
         <nav class="s-sidebar__nav">
-            <br><br>
+            <br><br><br>
             <ul>
-                <li>
-                    <a class="s-sidebar__nav-link" href="#0">
-                        <i class="fa fa-home"></i><em>Home</em>
-                    </a>
-                </li>
                 <li>
                     <a class="s-sidebar__nav-link" routerLink='/adminprofile'>
                         <i class="fa fa-user"></i><em>My Profile</em>
                     </a>
-                </li>
+                </li><br><br>
+                <li>
+                    <a class="s-sidebar__nav-link" routerLink='/admin'>
+                        <i class="fa fa-home"></i><em>Home</em>
+                    </a>
+                </li><br><br>
                 <li>
                   <a class="s-sidebar__nav-link" routerLink='/products'>
                       <i class="fa fa-product-hunt"></i><em>Products</em>
                   </a>
-              </li>
+              </li><br><br>
                 <li>
                     <a class="s-sidebar__nav-link" >
                         <i class="fa fa-cart-plus"></i><em class="nav-link dropdown-toggle" href="#" class="side"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Orders</em>
@@ -58,7 +27,12 @@
                           <li><a class="dropdown-item" routerLink='/approved'>Approved</a></li>
                         </ul>
                     </a>
-                </li>
+                </li><br><br>
+                <li>
+                    <a class="s-sidebar__nav-link" href="customers">
+                        <i class="fa fa-users"></i><em>Customers</em>
+                    </a>
+                </li><br><br>
 
 
                 <li>
