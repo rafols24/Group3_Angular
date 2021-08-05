@@ -31,16 +31,13 @@
                 <button class="primary cartBtn" routerLink="/user-cart"> Add to Cart</button> -->
 
 
-
-
             </div>
         </div>
     </div>
 </div>
 
-</div>
 
-<div  style="margin-top: 90px; margin-left:30%;" *ngIf ="isShown">
+<div  style="margin-top: 90px;" *ngIf ="isShown">
 
 <div style="margin-top: 90px; margin-left:25%;" *ngIf="isShown">
     <div class="container">
@@ -55,7 +52,7 @@
             <h3><b>{{productDetails.product_name}}</b></h3>
             <hr class="new2">
             <h5>{{productDetails.description}}</h5>
-            <button class="primary cartBtn" routerLink="/user-cart"> Add to Cart</button><br>
+            <button class="primary cartBtn" (click)="addToCart(productDetails.id) "> Add to Cart</button><br>
             <button class="btn btn-outline-primary" (click)="hideDetail()">Back</button>
         </div>
     </div>

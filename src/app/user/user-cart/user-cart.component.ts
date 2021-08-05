@@ -83,7 +83,6 @@ export class UserCartComponent implements OnInit {
       product_ids: this.selectedProductIds
     }, httpOptions).subscribe(res => {
       console.log(res);
-     
     Swal.fire({
       text: 'You order successfully! <br> The item will be delivery within 3 days.',
       icon: 'success'

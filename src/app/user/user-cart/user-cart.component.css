@@ -9,7 +9,7 @@
 .wrapper{
     position: relative;
 
-    margin-left: 100px;
+    margin-left: 80px;
 
 
 /*     margin-left: auto;
@@ -19,8 +19,7 @@
 table{
     position: relative;
     table-layout: auto;
-    width: 1000px;
-    margin-left: auto;
+    margin-left: 170px;
     margin-right: auto;
     
 }
