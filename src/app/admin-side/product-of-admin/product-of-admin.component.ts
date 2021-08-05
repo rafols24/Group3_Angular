@@ -37,7 +37,7 @@ export class ProductOfAdminComponent implements OnInit {
 
   showDetail(product) {
     this.isShown = true;
-    this.products = product;
+    this.productDetails = product;
     }
 
   hideDetail(){
