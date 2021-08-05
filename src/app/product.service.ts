@@ -8,12 +8,16 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductService {
+
+  user: any;
+
 //   constructor(private http: HttpClient) { }
 
 //   private productUrl = "http://127.0.0.1:8000/api/product/getAllProducts"; 
 //   id: number;
 //   get():Observable<Product[]>{
 //     return this.http.get<Product[]>(this.productUrl);
+
 
   constructor(private httpClient: HttpClient) { }
 
