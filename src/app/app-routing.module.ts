@@ -16,6 +16,7 @@ import { UserOrderComponent } from './../app/user/user-order/user-order.componen
 import { AdminProductComponent } from './../app/admin-side/admin-product/admin-product.component';
 import { ProductOfAdminComponent } from './../app/admin-side/product-of-admin/product-of-admin.component'
 import { AdminprofileComponent } from './adminprofile/adminprofile.component';
+import { UserprofileComponent } from './userprofile/userprofile.component';
 
 
 
@@ -41,6 +42,7 @@ const routes: Routes = [
   { path: 'products', component: AdminProductComponent, pathMatch: 'full'},
   { path: 'products', component: ProductOfAdminComponent, pathMatch: 'full'},
   { path: 'adminprofile', component: AdminprofileComponent, pathMatch: 'full'},
+  { path: 'userprofile', component: UserprofileComponent, pathMatch: 'full'},
 
 
 

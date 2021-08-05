@@ -31,6 +31,7 @@ import { UserOrderComponent } from './user/user-order/user-order.component';
 import { AdminProductComponent } from './admin/admin-product/admin-product.component';
 import { ProductOfAdminComponent } from './admin-side/product-of-admin/product-of-admin.component';
 import { AdminprofileComponent } from './adminprofile/adminprofile.component';
+import { UserprofileComponent } from './userprofile/userprofile.component';
 
 
 
@@ -66,6 +67,7 @@ import { AdminprofileComponent } from './adminprofile/adminprofile.component';
      AdminProductComponent,
      ProductOfAdminComponent,
      AdminprofileComponent,
+     UserprofileComponent,
     
 
 

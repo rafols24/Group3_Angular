@@ -2,5 +2,33 @@
     clear: both;
     position: relative;
     height: 200px;
-    margin-top: 355px;
+    margin-top: 537px;
+}
+table{
+    position: relative;
+    table-layout: auto;
+    width: 100%;
+    
+}
+.wrapper{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+table{
+    position: relative;
+    table-layout: auto;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+h4{
+    text-align: center;
+    margin-top: 30px;
+}
+.container{
+    margin-left: auto;
+    margin-right:auto;
 }
