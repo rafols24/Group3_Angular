@@ -10,10 +10,12 @@ import Swal from 'sweetalert2';
 })
 export class HomepageComponent implements OnInit {
 
+
   
   product: any;
   products: any;
   productDetails: any;
+
 
   isShown = false;
   productUrl = "http://127.0.0.1:8000/api/product/getAllProducts"; 
@@ -25,6 +27,7 @@ export class HomepageComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+
     this.userId = window.localStorage.getItem('userId');
     console.log(this.userId)
     this.http.get(this.productUrl).subscribe((product:any) => {
@@ -32,6 +35,19 @@ export class HomepageComponent implements OnInit {
   
       console.log(this.product);
       
+
+
+//     this.http.get(this.productUrl).subscribe((data:any) => {
+//       this.product = data.message;  
+//       data.show = false;
+//       return data;
+//       console.log(this.product);
+
+//     this.http.get(this.productUrl).subscribe((product:any) => {
+//         this.product = product.message;  
+//       console.log(this.product);
+   
+
    });
   
   }

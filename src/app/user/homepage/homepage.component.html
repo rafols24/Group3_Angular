@@ -4,6 +4,7 @@
     <app-user-top-bar></app-user-top-bar>
 </div>
 
+
 <div class="container" style="margin-left: 170px; margin-top: 50px;" *ngIf="!isShown">
     <div class="row">
         <div class="col" *ngFor="let products of product">
@@ -16,12 +17,30 @@
                         [title]="'Click to see the ' + products.name + ' details'">View Details</button>
                     <button class="primary cartBtn" (click)="addToCart(products.id)"> Add to Cart</button>
                 </div>
+
+
+<!-- <div class="container" style="margin-left: 200px; margin-top: 50px;" *ngIf ="!isShown" >
+<div class="row">
+    <div class="col" *ngFor="let products of product">
+        <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 16rem;">
+          <img [src]="products.product_image" alt="">
+            <div class="card-body tag">
+                <h5>{{products.product_name}}</h5>
+                <h6>Php {{products.price}}.00</h6>
+                <button class="primary cartBtn" (click)="showDetail(product)" [title]="'Click to see the ' + products.name + ' details'">View Details</button>
+                <button class="primary cartBtn" routerLink="/user-cart"> Add to Cart</button> -->
+
+
+
+
             </div>
         </div>
     </div>
 </div>
 
+</div>
 
+<div  style="margin-top: 90px; margin-left:30%;" *ngIf ="isShown">
 
 <div style="margin-top: 90px; margin-left:25%;" *ngIf="isShown">
     <div class="container">
@@ -42,25 +61,6 @@
     </div>
 </div>
 
- <!-- </div> --> 
-
-<!-- <div  style="margin-top: 90px; margin-left:30%;" *ngIf ="isShown">
-<div class="container">
-      <div class="col" *ngFor="let products of product">
-        <div class="card" style="width: 25rem;">
-            <div class="card-body">
-                <img [src]="products.product_image" alt="" width="100%">
-            </div>
-          </div>
-      </div>
-      <div class="col" *ngFor="let products of product" style="margin-left: 15px;">
-        <h5>{{products.product_name}}</h5>
-      </div>
-    </div>
-</div>
-<div class="footer">
-<app-footer></app-footer>
-</div> -->
 
 <div class="footer">
     <app-footer></app-footer>
