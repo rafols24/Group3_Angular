@@ -19,7 +19,8 @@
 table{
     position: relative;
     table-layout: auto;
-    margin-left: 170px;
+    width: 900px;
+    margin-left: auto;
     margin-right: auto;
     
 }

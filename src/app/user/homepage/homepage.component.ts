@@ -70,7 +70,7 @@ export class HomepageComponent implements OnInit {
       // this.router.navigateByUrl('user-cart');
 
       Swal.fire({
-        text: 'You order successfully!',
+        text: 'You added an item to cart!',
         icon: 'success'
       });
     })

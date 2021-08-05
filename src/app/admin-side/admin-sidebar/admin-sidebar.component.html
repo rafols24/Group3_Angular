@@ -6,6 +6,14 @@
       <button  class="side" routerLink='/addproduct'>Add Product</button><br>
       <button  class="side" routerLink='/products'>Products</button><br>
       <button class="side" routerLink='/customers'>Customer</button> <br>
-      <button class="side" routerLink='/order'> Order</button>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" class="side"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Order
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" routerLink='/order'>Pending</a></li>
+          <li><a class="dropdown-item" routerLink='/approved'>Approved</a></li>
+        </ul>
+      </li>
     </div>
   

@@ -31,6 +31,8 @@ import { UserOrderComponent } from './user/user-order/user-order.component';
 import { AdminProductComponent } from './admin/admin-product/admin-product.component';
 import { ProductOfAdminComponent } from './admin-side/product-of-admin/product-of-admin.component';
 import { AdminprofileComponent } from './adminprofile/adminprofile.component';
+import {FormsModule} from '@angular/forms';
+import { ApprovedProductsComponent } from './admin-side/approved-products/approved-products.component';
 
 
 
@@ -66,6 +68,7 @@ import { AdminprofileComponent } from './adminprofile/adminprofile.component';
      AdminProductComponent,
      ProductOfAdminComponent,
      AdminprofileComponent,
+     ApprovedProductsComponent,
     
 
 
@@ -76,6 +79,7 @@ import { AdminprofileComponent } from './adminprofile/adminprofile.component';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
+    FormsModule
     
   ],
   providers: [],
