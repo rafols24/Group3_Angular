@@ -5,6 +5,12 @@
     margin-left: 27px;
     background-color: rgb(77, 75, 75);
   }
+  .dropdown-menu{
+    background-color:rgb(77, 75, 75) ;
+  }
+  li{
+    font-size: 12px;
+  }
   .sidenav {
     height: 100%;
     width: 160px;

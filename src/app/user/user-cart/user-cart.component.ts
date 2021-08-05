@@ -1,6 +1,8 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/product.service';
+import {FormsModule} from '@angular/forms';
+import {  FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -21,11 +23,16 @@ export class UserCartComponent implements OnInit {
   ) { }
 
   userId:any;
+  checkOutForm:any = FormGroup;
+
   ngOnInit(): void {
     this.userId = window.localStorage.getItem('userId');
     this.getCartProducts()
     console.log('userId');
+
   }
+
+
 
   getCartProducts() {
     this.http.get('http://127.0.0.1:8000/api/users/carts/2').subscribe(products => {
@@ -74,24 +81,36 @@ export class UserCartComponent implements OnInit {
        this.selectedProductIds = this.products.map(product => product.id)
     }
   }
+  
 
+  hideMe = true;
   async checkout() {
+    this.hideMe= false;
+
     await this.http.post(`http://127.0.0.1:8000/api/orders/users/${this.userId}`, {
       total: this.total,
-      address:'dsfsdf',
-      phonenumber: '234234',
+      address: "cxv xc",
+      phonenumber: "0989998899",
       product_ids: this.selectedProductIds
     }, httpOptions).subscribe(res => {
       console.log(res);
-    Swal.fire({
-      text: 'You order successfully! <br> The item will be delivery within 3 days.',
-      icon: 'success'
+    // Swal.fire({
+    //   text: 'You order successfully! <br> The item will be delivery within 3 days.',
+    //   icon: 'success'
+    // });
+    // 
+    
+      
+
+    
     });
+
     window.location.reload();
-    })
+    
+
   }
 
-
+ 
 
 }
 
