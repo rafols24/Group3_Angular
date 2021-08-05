@@ -3,6 +3,7 @@ import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import Swal from 'sweetalert2';
+import { ProductService } from '../product.service';
 
 @Component({
   selector: 'app-login',
@@ -14,7 +15,8 @@ export class LoginComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private router: Router,
-    private http: HttpClient
+    private http: HttpClient,
+    private productservice: ProductService
 
   ) { }
 
@@ -42,7 +44,7 @@ onSubmit(): void {
 
     console.log(userToken);
     this.kindOfUser = userToken;
-
+    this.productservice.user = userToken;
     if (this.kindOfUser.logincredential.usertype === 'customer') {
       this.router.navigate(['/userhomepage']);
     }
@@ -51,7 +53,7 @@ onSubmit(): void {
       this.router.navigate(['/admin']);
     }
     
-
+    window.localStorage.setItem('userId', this.kindOfUser.logincredential.id)
     window.localStorage.setItem('token', this.kindOfUser.token);
 
     },

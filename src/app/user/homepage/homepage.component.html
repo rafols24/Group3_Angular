@@ -12,9 +12,9 @@
                 <div class="card-body tag">
                     <h5>{{products.product_name}}</h5>
                     <h6>Php {{products.price}}.00</h6>
-                    <button class="primary cartBtn" (click)="showDetail(product)"
+                    <button class="primary cartBtn" (click)="showDetail(products)"
                         [title]="'Click to see the ' + products.name + ' details'">View Details</button>
-                    <button class="primary cartBtn" routerLink="/user-cart"> Add to Cart</button>
+                    <button class="primary cartBtn" (click)="addToCart(products.id)"> Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -25,17 +25,17 @@
 
 <div style="margin-top: 90px; margin-left:25%;" *ngIf="isShown">
     <div class="container">
-        <div class="col" *ngFor="let products of product">
+        <div class="col">
             <div class="card" style="width: 30rem;">
                 <div class="card-body">
-                    <img [src]="products.product_image" alt="" width="100%">
+                    <img [src]="productDetails.product_image" alt="" width="100%">
                 </div>
             </div>
         </div>
-        <div class="col" *ngFor="let products of product">
-            <h3><b>{{products.product_name}}</b></h3>
+        <div class="col">
+            <h3><b>{{productDetails.product_name}}</b></h3>
             <hr class="new2">
-            <h5>{{products.description}}</h5>
+            <h5>{{productDetails.description}}</h5>
             <button class="primary cartBtn" routerLink="/user-cart"> Add to Cart</button><br>
             <button class="btn btn-outline-primary" (click)="hideDetail()">Back</button>
         </div>

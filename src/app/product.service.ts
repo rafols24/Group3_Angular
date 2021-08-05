@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ProductService {
-
+  user: any;
   constructor(private httpClient: HttpClient) { }
 
   private productUrl = "http://127.0.0.1:8000/api/product/deleteProduct"; 

@@ -11,7 +11,9 @@ import { ProductService } from './../../product.service';
 export class ProductOfAdminComponent implements OnInit {
 
   
+  
   product: any;
+  products: any;
   productDetails: any;
 
   isShown = false;
@@ -25,21 +27,17 @@ export class ProductOfAdminComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.http.get(this.productUrl).subscribe((data:any) => {
-      // this.productDetails = data.map(product => {
-        this.product = data.message;  
+    this.http.get(this.productUrl).subscribe((product:any) => {
+      this.product = product.message;  
 
-      data.show = false;
-      return data;
-      console.log(this.product);
-    //  });
-      
-   });
+    console.log(this.product);
+    
+ });
   }
 
   showDetail(product) {
     this.isShown = true;
-    this.product = product;
+    this.products = product;
     }
 
   hideDetail(){
