@@ -74,7 +74,6 @@ export class HomepageComponent implements OnInit {
     }).subscribe(res => {
       // this.router.navigateByUrl('user-cart');
 
-
       Swal.fire({
         text: 'You order successfully!',
         icon: 'success'
