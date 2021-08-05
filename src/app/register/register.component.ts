@@ -68,6 +68,7 @@ mydata: any;
     //stop here if form is invalid
 
     this.spinner = false;
+    
     if (this.user.invalid) {
       return;
     }

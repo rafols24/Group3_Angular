@@ -1,9 +1,9 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/product.service';
-import {FormsModule} from '@angular/forms';
 import {  FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-cart',
@@ -19,11 +19,12 @@ export class UserCartComponent implements OnInit {
 
   constructor(
     private http: HttpClient,
-    private productservice: ProductService
+    private productservice: ProductService,
+    private router :Router
   ) { }
 
   userId:any;
-  checkOutForm:any = FormGroup;
+  
 
   ngOnInit(): void {
     this.userId = window.localStorage.getItem('userId');
@@ -91,21 +92,21 @@ export class UserCartComponent implements OnInit {
       total: this.total,
       address: "cxv xc",
       phonenumber: "0989998899",
+      status: "Pending",
       product_ids: this.selectedProductIds
     }, httpOptions).subscribe(res => {
       console.log(res);
-    // Swal.fire({
-    //   text: 'You order successfully! <br> The item will be delivery within 3 days.',
-    //   icon: 'success'
-    // });
-    // 
-    
-      
 
     
     });
 
-    window.location.reload();
+       Swal.fire({
+      text: 'You order successfully! The item will be delivery within 3 days.',
+       icon: 'success'
+       });
+
+       this.router.navigate(['/user-cart'])
+        window.location.reload();
     
 
   }
