@@ -13,7 +13,6 @@ export class ProductOfAdminComponent implements OnInit {
   
   
   product: any;
-  products: any;
   productDetails: any;
 
   isShown = false;
@@ -30,14 +29,15 @@ export class ProductOfAdminComponent implements OnInit {
     this.http.get(this.productUrl).subscribe((product:any) => {
       this.product = product.message;  
 
-    console.log(this.product);
+   
     
  });
   }
 
-  showDetail(product) {
+  showDetail(product:any) {
     this.isShown = true;
-    this.products = product;
+    this.productDetails = product
+    console.log( this.productDetails);
     }
 
   hideDetail(){
